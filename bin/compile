@@ -10,4 +10,4 @@ echo "-----> Compiling with $(bundle exec jekyll --version)"
 
 cd "$1"
 
-bundle exec jekyll build | indent
+bundle exec jekyll build 2>&1 | indent
