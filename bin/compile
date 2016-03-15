@@ -2,8 +2,6 @@
 
 set -eo pipefail
 
-set -x
-
 indent() {
   sed -u 's/^/       /'
 }
