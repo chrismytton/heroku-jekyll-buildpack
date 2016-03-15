@@ -2,6 +2,8 @@
 
 set -eo pipefail
 
+cd "$1"
+
 if bundle list | grep -q jekyll; then
   echo "Jekyll"
   exit 0
