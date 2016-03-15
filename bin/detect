@@ -2,6 +2,8 @@
 
 set -eo pipefail
 
+set -x
+
 cd "$1"
 
 if bundle list | grep -q jekyll; then
