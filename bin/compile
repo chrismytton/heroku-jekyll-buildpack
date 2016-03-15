@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+set -x
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Compiling with $(bundle exec jekyll --version)"
+
+cd "$1"
+
+bundle exec jekyll build | indent
